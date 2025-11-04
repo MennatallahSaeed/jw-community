@@ -63,6 +63,11 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     text-transform: uppercase;
 }
+@media (max-width: 359px) {
+    #logo-title {
+        display: none;
+    }
+}
 #header-links {
     display: block;    
     right: 55px;
@@ -925,7 +930,7 @@ a.guider_button:hover {
     display: block;
     position: absolute;
     top: 5px;
-    right: 100px;
+    right: 120px;
     z-index: 10001;
 }
 .marketplaceAppHeader{
@@ -934,7 +939,7 @@ a.guider_button:hover {
 }
 
 .marketplaceAppHeader #main-action-help > i{
-    left: calc(100% - 190px);
+    left: calc(100% - 110px);
     position: fixed;
     color: #727272;
 }
