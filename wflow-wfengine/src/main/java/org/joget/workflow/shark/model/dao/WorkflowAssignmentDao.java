@@ -535,7 +535,7 @@ public class WorkflowAssignmentDao extends AbstractSpringDao {
             }
             
             if (processId != null && !processId.isEmpty()) {
-                condition += " and p.processId = ?";
+                condition += " and p.processId like ?";
                 params.add(processId);
             }
             

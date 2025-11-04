@@ -1,0 +1,155 @@
+/* === Vodafone Branding Overrides === */
+
+/* Brand colors */
+:root {
+  --vodafone-red: #e60000;
+  --vodafone-dark-gray: #4d4d4d;
+  --vodafone-black: #000000;
+  --vodafone-light-gray: #f2f2f2;
+  --vodafone-black: #000000;
+  --vodafone-white: #ffffff;
+}
+
+/* Buttons */
+.btn, 
+.btn-primary, 
+.joget-button {
+  background-color: var(--vodafone-red) !important;
+  border-color: var(--vodafone-red) !important;
+  color: #fff !important;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #cc0000 !important;
+  border-color: #cc0000 !important;
+}
+
+/* Navigation bar / header */
+.navbar, 
+.navbar-default,
+.navbar-inverse {
+  background-color: var(--vodafone-dark-gray) !important;
+  border-color: var(--vodafone-dark-gray) !important;
+  color: #fff !important;
+}
+
+#header-welcome-message,
+i, svg {
+  color: #fff !important;
+}
+
+/* Links */
+a, a:visited {
+  color: var(--vodafone-red) !important;
+}
+a:hover {
+  color: #cc0000 !important;
+}
+
+/* Form section headers */
+.form-section-title {
+  background-color: #cc0000 !important;
+  color: #fff !important;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Table header */
+.table thead th {
+  background-color: var(--vodafone-dark-gray) !important;
+  color: #fff !important;
+}
+
+/* Selected rows or highlights */
+.table tbody tr.selected,
+.list-row.selected {
+  background-color: var(--vodafone-light-gray) !important;
+}
+
+/* Logo */
+.sidebar_brand .logo_container {
+  background: url("/jw/images/vodafone-icon.svg") no-repeat center left;
+  background-size: contain;
+}
+
+.logo {
+  display: none;
+}
+  
+/* Login page */
+
+#login {
+  background-color: var(--vodafone-white) !important;
+  overflow: hidden;
+}
+
+#loginForm {
+  background-color: var(--vodafone-dark-gray) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
+  color: var(--vodafone-white) !important;
+}
+
+#loginForm > div > h1,
+body#login label {
+  color: var(--vodafone-white);
+}
+
+#content > main > div > div.d-flex.flex-lg-row-fluid.w-lg-50.bgi-size-cover.bgi-position-center.order-1.order-lg-2 {
+  background: var(--vodafone-red) !important;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Login Inputs */
+#login input[type=text],
+#login input[type=password] {
+  border: 1px solid var(--vodafone-dark-gray) !important;
+  color: var(--vodafone-black) !important;
+}
+#login input:focus {
+  outline-color: var(--vodafone-red) !important;
+  box-shadow: 0 0 25px var(--vodafone-red);
+}
+
+/* Login Submit */
+body#login #loginForm table td input[type='submit'] {
+  background-color: var(--vodafone-red) !important;
+}
+body#login #loginForm table td input[type='submit']:hover {
+  background-color: #cc0000 !important;
+}
+
+/* Dashboard */
+.dataList#dataList_applist .appIcon {
+  background-color: var(--vodafone-white) !important;
+  border: 1px solid var(--vodafone-light-gray) !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+  height: 100% !important;
+  max-height: unset !important;
+}
+.dataList#dataList_applist .appIcon:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out !important;
+}
+.ph_column_title {
+  background-color: var(--vodafone-red) !important;
+  color: var(--vodafone-white) !important;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+#home #pc- {
+  text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+#home #pc- .btn {
+  /*background-color: var(--vodafone-light-gray) !important;*/
+}

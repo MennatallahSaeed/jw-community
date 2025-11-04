@@ -6,7 +6,19 @@
     "orderBy" : "dateCreated",
     "actions" : [],
     "rowActions" : [],
-    "filters" : [],
+    "filters" : [{
+        "id" : "processIdFilter",
+        "name" : "processId",
+        "label" : "@@userview.inboxmenu.processId@@",
+        "type" : {
+            "className" : "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+            "properties" : {
+                "defaultValue" : "",
+                "filterSelection" : "String",
+                "searchFields" : ""
+            }
+        }
+    }],
     "binder" : {
         "className" : "",
         "properties" : {}
@@ -30,8 +42,8 @@
     },
     {
         "id" : "column_0",
-        "label" : "@@userview.inboxmenu.processName@@",
-        "name" : "processName",
+        "label" : "@@userview.inboxmenu.processId@@",
+        "name" : "processId",
         "sortable" : "true"
     },
     {

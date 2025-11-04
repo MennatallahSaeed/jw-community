@@ -624,6 +624,8 @@ public class WorkflowJsonController {
             data.put("dateCreated", TimeZoneUtil.convertToTimeZone(assignment.getDateCreated(), null, format));
             data.put("acceptedStatus", assignment.isAccepted());
             data.put("due", assignment.getDueDate() != null ? TimeZoneUtil.convertToTimeZone(assignment.getDueDate(), null, format) : "-");
+            data.put("assigneeId", assignment.getAssigneeId() != null ? assignment.getAssigneeId() : "");
+            data.put("assigneeName", assignment.getAssigneeName() != null ? assignment.getAssigneeName() : "Unassigned");
 
             double serviceLevelMonitor = workflowManager.getServiceLevelMonitorForRunningActivity(assignment.getActivityId());
 
@@ -659,6 +661,8 @@ public class WorkflowJsonController {
             data.put("processVersion", assignment.getProcessVersion());
             data.put("dateCreated", TimeZoneUtil.convertToTimeZone(assignment.getDateCreated(), null, AppUtil.getAppDateFormat()));
             data.put("due", assignment.getDueDate() != null ? TimeZoneUtil.convertToTimeZone(assignment.getDueDate(), null, AppUtil.getAppDateFormat()) : "-");
+            data.put("assigneeId", assignment.getAssigneeId() != null ? assignment.getAssigneeId() : "");
+            data.put("assigneeName", assignment.getAssigneeName() != null ? assignment.getAssigneeName() : "Unassigned");
 
             double serviceLevelMonitor = workflowManager.getServiceLevelMonitorForRunningActivity(assignment.getActivityId());
 
@@ -693,7 +697,8 @@ public class WorkflowJsonController {
             data.put("processVersion", assignment.getProcessVersion());
             data.put("dateCreated", TimeZoneUtil.convertToTimeZone(assignment.getDateCreated(), null, AppUtil.getAppDateFormat()));
             data.put("due", assignment.getDueDate() != null ? TimeZoneUtil.convertToTimeZone(assignment.getDueDate(), null, AppUtil.getAppDateFormat()) : "-");
-
+            data.put("assigneeId", assignment.getAssigneeId() != null ? assignment.getAssigneeId() : "");
+            data.put("assigneeName", assignment.getAssigneeName() != null ? assignment.getAssigneeName() : "Unassigned");
 
             double serviceLevelMonitor = workflowManager.getServiceLevelMonitorForRunningActivity(assignment.getActivityId());
 
