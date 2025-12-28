@@ -55,12 +55,6 @@ a:hover {
   border-radius: 4px;
 }
 
-/* Table header */
-.table thead th {
-  background-color: var(--vodafone-dark-gray) !important;
-  color: #fff !important;
-}
-
 /* Selected rows or highlights */
 .table tbody tr.selected,
 .list-row.selected {

@@ -123,6 +123,8 @@
         
         <!-- Ship And Track -->
         <security:intercept-url pattern="/web/api/po/**" access="ROLE_ADMIN, ROLE_USER"/>
+        <security:intercept-url pattern="/web/api/shipments/summary" access="ROLE_ADMIN, ROLE_USER"/>
+        <security:intercept-url pattern="/web/api/shipments/byDate" access="ROLE_ADMIN, ROLE_USER"/>
                 
         <!-- Secure by default -->
         <security:intercept-url pattern="/web/json/**" access="ROLE_ADMIN, ROLE_APPADMIN" />
